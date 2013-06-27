@@ -65,11 +65,11 @@ trait BlockAccel extends Block
 			ForgeDirection.UP,
 			ForgeDirection.DOWN)
 		for(dir <- dirs)
-			{
-				val tile = world.getBlockTileEntity(x + dir.offsetX, y + dir.offsetY, z + dir.offsetZ)
-					if(tile != null)
-						arr.add(tile)
-			}
+		{
+			val tile = world.getBlockTileEntity(x + dir.offsetX, y + dir.offsetY, z + dir.offsetZ)
+			if(tile != null)
+				arr.add(tile)
+		}
 
 		val meta = world.getBlockMetadata(x, y, z)
 		for(i <- 1 to meta + 2)
