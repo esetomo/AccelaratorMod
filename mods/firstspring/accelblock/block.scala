@@ -67,8 +67,8 @@ trait BlockAccel extends Block
 		for(dir <- dirs)
 			{
 				val tile = world.getBlockTileEntity(x + dir.offsetX, y + dir.offsetY, z + dir.offsetZ)
-						if(tile != null)
-							arr.add(tile)
+					if(tile != null)
+						arr.add(tile)
 			}
 
 		val meta = world.getBlockMetadata(x, y, z)
