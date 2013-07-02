@@ -2,8 +2,8 @@
   <property environment="env"/>
 
   <property name="version" value="local"/>
-  <property name="mc.version" value="1.5.2"/>
-  <property name="forge.version" value="7.8.1.737"/>
+  <property name="mc.version" value="1.6.1"/>
+  <property name="forge.version" value="8.9.0.751"/>
 
   <condition property="buildNumber" value="_${env.BUILD_NUMBER}" else="">
     <isset property="env.BUILD_NUMBER" />

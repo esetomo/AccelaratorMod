@@ -43,7 +43,7 @@ trait BlockAccel extends Block
 				meta = 0
 			}
 			world.setBlockMetadataWithNotify(x, y, z, meta, 0)
-			player.sendChatToPlayer("Change to " + (meta + 2) + "x")
+			player.addChatMessage("Change to " + (meta + 2) + "x")
 			world.scheduleBlockUpdate(x, y, z, this.blockID, 1)
 			true
 		}
